@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="Casino.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Crazy Diamond</title>
+</head>
+<script type="text/javascript" src="Roulette.js"></script>
+
+
+        <!-- l'entete-->
+<header class="header">
+    <a href="./index.html" class="logo"><img id="logo" src="./MesDocuments/Screenshot (183).png" alt="Let's share the world"></a>
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+    <ul class="menu"><h3>
+        <li id="deux"><a href="./index.html">ACCUEIL</a></li>
+        <li id="un"><a href="./Roulette.html">Roulette</a></li>
+    </ul>
+</header>
+<br><br><br><br>
+<body>
+
+<div class="rowx1" style="height: 600px;background-size: cover;background-image: url(./MesDocuments/luke-stackpoole-mOEqOtmuPG8-unsplash.jpg);">
+    <div class="Atexte">
+        <h1 style="padding: 100px 0px 200px 0px; color: white;">Bienvenue<br> au <br><strong>Crazy Diamond</strong><br></h1>
+    </div>
+</div>
+
+<br>
+
+<div class="rowx2" style="height: 900px;">
+    <div class="Btexte" style="height:inherit;width: 48%;float: left;font-size: 26px;line-height: 1.7;letter-spacing: -0.019em;font-weight: 100;font-style: normal;">
+        <h3>A propos de Crazy Diamond:</h3>
+        <P style="margin: 0px 100px;"> Les règles du jeu de la roulette sont simples : <br> Si vous tirez le numéro du joueur, vous gagnez la mise 36 fois.
+            <br>Si vous tirez un numéro pair et que vous avez choisi « pair », vous remportez le double de la mise. <br> Même chose avec les impairs.
+         <br>Bonne chance !</p>
+    </div>
+    <div class="Btexte" style="height:inherit;width: 48%;float: right;font-size: 26px;line-height: 1.7;letter-spacing: -0.019em;font-weight: 100;font-style: normal;">
+        <img id="gif" src="./Annotation 2020-08-05 153154.png"><br>
+        <select id="iso">
+            <option class="pari" value="impair">Impair</option>
+            <option class="pari" value="pair">Pair</option>
+            <option class="pari" value="2">2</option>
+            <option class="pari" value="3">3</option>
+            <option class="pari" value="4">4</option>
+            <option class="pari" value="5">5</option>
+            <option class="pari" value="6">6</option>
+            <option class="pari" value="7">7</option>
+            <option class="pari" value="8">8</option>
+            <option class="pari" value="9">9</option>
+            <option class="pari" value="10">10</option>
+            <option class="pari" value="11">11</option>
+            <option class="pari" value="12">12</option>
+            <option class="pari" value="13">13</option>
+            <option class="pari" value="14">14</option>
+            <option class="pari" value="15">15</option>
+            <option class="pari" value="16">16</option>
+            <option class="pari" value="17">17</option>
+            <option class="pari" value="18">18</option>
+            <option class="pari" value="19">19</option>
+            <option class="pari" value="20">20</option>
+            <option class="pari" value="21">21</option>
+            <option class="pari" value="22">22</option>
+            <option class="pari" value="23">23</option>
+            <option class="pari" value="24">24</option>
+            <option class="pari" value="25">25</option>
+            <option class="pari" value="26">26</option>
+            <option class="pari" value="27">27</option>
+            <option class="pari" value="28">28</option>
+            <option class="pari" value="29">29</option>
+            <option class="pari" value="30">30</option>
+            <option class="pari" value="31">31</option>
+            <option class="pari" value="32">32</option>
+            <option class="pari" value="33">33</option>
+            <option class="pari" value="34">34</option>
+            <option class="pari" value="35">35</option>
+            <option class="pari" value="36">36</option>
+            
+        </select>
+        <input type="number" id="number" min="0" value="">
+        <input type="submit" id="Go" onclick="go()"  value="Go">
+        <input type="submit" id="stop" onclick="stop()"  value="stop"><br>
+        <input type="number" id="pmj" value="100" disabled><br>
+        <input type="number" id="pmo" value="0" disabled>
+        <div id="roue">
+            <img id="i3" name="slide" src="CHIFFRE/icons8-0-96.png" alt="img">
+        </div>
+    </div>
+    
+</div>
+
+
+<br>
+
+
+</body>
+
+<footer style="background-size: cover;background-image: url(./MesDocuments/fuji-monochrome-7m.jpg);font-size: 15px;line-height: 1.5;letter-spacing: 0.106em;font-weight: 900;">
+    <div class="footer">
+        <div class="footercontainer" style="color: whitesmoke;background-color: rgba(0, 0, 0, 0.795);">
+            <div>
+            <form class="formulaire">
+                <br><br><br>    
+                    <h3>Avis !!!</h3>
+                    <div>
+                        <label for="NometPr&eacutenom">Nom et Pr&eacutenoms:</label><br>
+                        <input type="text" placeholder="Nom et Prenom">
+                    </div>
+                    <div>
+                        <label>Commentaires:</label><br>
+                        <textarea placeholder="Alors, pret a vivre de bons moments?" name="commentaire" cols="30" rows="2"></textarea><br>
+                        <input type="submit" value="commenter">
+                    </div>
+                    <div>
+                        <br><br>
+            </form>
+            </div>
+            <div class="citation">
+                    <q>Qu'attendez vous ???<br>VENEZ!!!.</q>
+                    <br>
+                    <a href="#"><img src="./MesDocuments/Screenshot (183).png" alt=""></a>
+            </div>
+            <div id="media"> 
+                <ul>
+                    <li><a href="mailto:marwan.rabe150@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </i></li>
+                    <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></li></a>
+                    <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+                </ul>
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+</footer>
+</html>
+
