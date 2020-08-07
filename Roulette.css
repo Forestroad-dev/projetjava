@@ -166,9 +166,10 @@ ul,li{
 {
     border: none;
 	padding: 4px 7px;
-	border-radius: 5px;
+	border-radius: 50px;
     box-sizing: border-box;
     transition: ease 1s;
 }
 
 
+ 
